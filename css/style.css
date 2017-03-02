@@ -248,7 +248,7 @@ a {
 
 .header-bottom {
 	min-height: 277px;
-	background-color: #F1F5F7;
+	background-color: #F1F5F7;	
 }
 
 .header-bottom-text {
@@ -273,6 +273,8 @@ a {
 	margin-top: 45px;	
 }
 
+
+
 .phone {
 	font-family: 'Cuprum', "Tahoma", sans-serif;	
 	font-size: 21px;
@@ -284,7 +286,19 @@ a {
 	box-sizing: border-box;
 	padding-top: 12px;
 	padding-left: 80px;
-	border: 2px solid #FEFFFF;	
+	border: 2px solid #FEFFFF;
+	position: relative;
+}
+
+.phone::before {
+	content: "";
+	height: 19px;
+	width: 19px;
+	position: absolute;
+	left: 15px;
+	background-image: url("../img/sprite-1.png");
+	background-position: -145px;
+
 }
 
 .adress {
@@ -309,7 +323,8 @@ a {
 	line-height: 21px;
 	color: #000;
 	float: right;
-	margin-top: 45px;	
+	margin-top: 45px;
+	margin-bottom: 70px;	
 }
 
 .coming {
@@ -324,6 +339,7 @@ a {
 	padding-left: 30px;
 	margin-left: 12.5px;
 	cursor: pointer;
+	position: relative;
 }
 
 .coming:hover {
@@ -332,6 +348,27 @@ a {
 
 .coming:active {
 	color: #CACACA;	
+}
+
+.coming::before {
+	content: "";
+	height: 17px;
+	width: 20px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	background-image: url("../img/sprite-1.png");
+	background-position: -62px;
+}
+
+.coming:hover::before {	
+	background-image: url("../img/sprite-1.png");
+	background-position: -82px;
+}
+
+.coming:active::before {	
+	background-image: url("../img/sprite-1.png");
+	background-position: -62px;
 }
 
 .registration {
@@ -350,4 +387,37 @@ a {
 
 .registration:active {
 	color: #CACACA;	
+}
+
+
+.main-menu {
+	clear: both;	
+	width: 940px;
+	font-family: 'Cuprum', "Tahoma", sans-serif;	
+	font-size: 0;
+	font-weight: normal;	
+	line-height: 17px;	
+}
+
+.main-menu li {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: 5px solid #293449;
+}
+
+.main-menu a {
+	display: block;
+	color: #fff;
+	padding: 20px 33.5px;
+	padding-bottom: 15px;
+	font-size: 17px;
+	background-color: #32425C;
+}
+
+.main-menu a:hover {	
+	background-color: #293449;
+}
+
+.main-menu a:active {	
+	color: #9B9DA2;
 }

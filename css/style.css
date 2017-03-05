@@ -35,7 +35,7 @@ a {
 }
 
 .central-block {
-	width: 942px;
+	width: 940px;
 	margin: 0 auto;
 	background-color yellow;	
 }
@@ -138,9 +138,9 @@ a {
 	background-position: 57px;	
 }
 
-.bookmark {
+.header-top-bookmark {
 	display: block;
-	width: 165px;
+	width: 163px;
 	height: 43px;
 	background-color: #293449;
 	box-sizing: border-box;
@@ -151,16 +151,16 @@ a {
 	position: relative;	
 }
 
-.bookmark:hover {	
+.header-top-bookmark:hover {	
 	background-color: #212A3A;	
 }
 
-.bookmark:active {	
+.header-top-bookmark:active {	
 	background-color: #161D29;
 	color: #BABBBD;
 }
 
-.bookmark::before {
+.header-top-bookmark::before {
 	content: "";
 	height: 16px;
 	width: 14px;
@@ -171,12 +171,12 @@ a {
 	background-position: -34px;	
 }
 
-.bookmark:hover::before {	
+.header-top-bookmark:hover::before {	
 	background-image: url("../img/sprite-1.png");
 	background-position: -48px;	
 }
 
-.bookmark:active::before {	
+.header-top-bookmark:active::before {	
 	background-image: url("../img/sprite-1.png");
 	background-position: -34px;	
 }
@@ -400,7 +400,7 @@ a {
 
 .main-menu {
 	clear: both;	
-	width: 942px;
+	width: 940px;
 	font-family: 'Cuprum', "Tahoma", sans-serif;	
 	font-size: 0;
 	font-weight: normal;	
@@ -648,4 +648,217 @@ a {
 
 .item-6 .text-2:active {
 	background-color: #BE8A22;
+}
+
+
+.popular-products {
+	min-height: 90px;
+	font-family: 'Cuprum';	
+	font-size: 30px;
+	font-weight: normal;	
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+	background-color: #F7F3EC;
+	box-sizing: border-box;
+	padding-top: 30px;
+	
+}
+
+.popular-products-text {
+	display: block;
+	width: 270px;
+	margin-bottom: -30px;
+	margin-left: 30px;	
+}
+
+.all-popular-products {
+	min-height: 38px;
+	width: 255px;
+	font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #EE3643;
+	box-sizing: border-box;
+	margin-left: 660px;
+	padding-top: 11px;
+	text-align: center;
+	border-radius: 3px;
+
+}
+
+.catalog-items{
+    width:940px;
+    margin:20px auto;
+    background-color red;
+}
+.catalog-items .row{
+    margin-left:-20px;
+}
+.catalog-item{
+    position:relative;
+    display:inline-block;
+    width:218px;
+    margin-left:20px;   
+    border:1px solid #ccc;
+    line-height:20px;
+    font-weight:bold;
+    text-align:center;
+}
+.catalog-items{
+    font-size:0;
+}
+.catalog-item{
+    font-size:16px;
+}
+
+.catalog-item:hover{
+    box-shadow: 0px 7px 30px 0px #707377; 
+}
+
+.catalog-item-2 img,
+.catalog-item-4 img {
+	margin-top: 30px;
+}
+.catalog-item-3 img {
+	margin-top: 20px;
+}
+
+.catalog-item .flag-new{
+	position:absolute;
+    top:-1px;
+    right:-1px;
+    width:60px;
+    height:60px;
+    text-indent:-1000px;
+    overflow:hidden;
+     z-index:20;
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+.catalog-item .actions{
+    position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,0.9);
+    z-index:10;
+}
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark{
+    display:block;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:7px;
+    padding:7px 0;
+   	border: 3px solid #63a63e;
+    border-bottom-color:#367315; 
+    background-color:#63a63e;
+    color:white;
+    font-size:14px;
+    font-weight:normal;
+    font-family:"Cuprum", sans-serif;
+    line-height:18px;
+    text-decoration:none;
+    text-transform:uppercase;    
+    border-radius:3px;
+    outline: none;
+}
+
+
+.catalog-item .actions .buy {	
+	 border-bottom-color: #377416;
+	 position: relative;
+}
+
+.catalog-item .actions .buy:hover {     
+    background-color: #5FBB2D;
+    border-color: #5FBB2D; 
+     border-bottom-color:  #377416;   
+}
+
+.catalog-item .actions .buy:active {     
+    background-color: #518534;
+    border-color: #518534;    
+}
+
+.catalog-item .actions .buy::before {	
+	 content: "";
+	 position: absolute;
+	 width: 17px;
+	 height: 16px;
+	 left: 10px;	 
+	 background-image: url("../img/sprite-1.png");
+	 background-position: 0px 0.5px;
+}
+
+.catalog-item .actions .buy:hover::before {	 
+	 background-image: url("../img/sprite-1.png");
+	 background-position: -17px 0.5px;
+}
+
+.catalog-item .actions .bookmark{
+    color:#32425c;
+    background:white;
+    border-bottom-color:#63a63e;
+}
+
+.catalog-item .actions .bookmark:hover {    
+    border-color: #32425C;
+}
+
+.catalog-item .actions .bookmark:active {    
+    border-color: #C1C6CE;
+    color: #C1C6CE;
+}
+
+.catalog-item .actions{
+    display:none;
+}
+.catalog-item:hover .actions{
+    display:block;
+}
+.catalog-item .image{
+    width:218px;
+    height:168px;
+}
+.catalog-item .image img{
+    max-width:100%;
+}
+.catalog-item .title{
+    min-height:40px;
+    padding:0 25px;
+    margin-top:10px;
+    margin-bottom:15px;    
+}
+.catalog-item .discount{
+    min-height:20px;
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#999;
+    text-decoration:line-through;
+}
+.catalog-item .price{
+    position:relative;
+    width:80px;
+    margin:10px auto;
+    margin-bottom:20px;
+    padding:10px 30px;
+    color:white;
+    background:#ee3643;
+    border-radius:3px;
+}
+.catalog-item .price:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-20px;
+    width:0;
+    height:0;
+    border:20px solid white;
+    border-left-color:#ee3643;
 }

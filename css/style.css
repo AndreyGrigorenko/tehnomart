@@ -651,7 +651,8 @@ a {
 }
 
 
-.popular-products {
+.popular-products,
+.popular-manufacturers {
 	min-height: 90px;
 	font-family: 'Cuprum';	
 	font-size: 30px;
@@ -665,14 +666,20 @@ a {
 	
 }
 
-.popular-products-text {
+.popular-products-text,
+.popular-manufacturers-text {
 	display: block;
 	width: 270px;
 	margin-bottom: -30px;
 	margin-left: 30px;	
 }
 
-.all-popular-products {
+.popular-manufacturers-text {	
+	width: 450px;	
+}
+
+.all-popular-products,
+.all-manufacturers {
 	min-height: 38px;
 	width: 255px;
 	font-family: 'Cuprum';	
@@ -861,4 +868,60 @@ a {
     height:0;
     border:20px solid white;
     border-left-color:#ee3643;
+}
+
+
+.info-block-3 {
+	min-height: 505px;
+	background-color #E6E6FA;
+}
+
+.manufacturers {
+	min-height: 310px;
+	margin-top: 20px;
+	font-size: 0;		
+}
+
+.manufacturers .manufacturer{
+	min-height: 145px;
+	width: 220px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
+	margin-right: 20px;	
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #E4E4E4;	
+}
+
+.manufacturers .manufacturer:hover {	
+	box-shadow: 0px 7px 25px 0px #707377; 
+}
+
+.manufacturers .manufacturer:active {	
+	box-shadow: 0px 5px 8px 0px #707377; 
+}
+
+.manufacturers .manufacturer:nth-child(4n){	
+	margin-right: 0;		
+}
+
+.manufacturers .manufacturer:first-child,
+.manufacturers .manufacturer:nth-child(2),
+.manufacturers .manufacturer:nth-child(3),
+.manufacturers .manufacturer:nth-child(5) {	
+	padding-top: 55px;		
+}
+
+.manufacturers .manufacturer:nth-child(4),
+.manufacturers .manufacturer:nth-child(6) {	
+	padding-top: 30px;		
+}
+
+.manufacturers .manufacturer:nth-child(8) {	
+	padding-top: 35px;		
+}
+
+.manufacturers .manufacturer:nth-child(7) {	
+	padding-top: 25px;		
 }

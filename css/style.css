@@ -872,13 +872,13 @@ a {
 
 
 .info-block-3 {
-	min-height: 505px;
-	background-color #E6E6FA;
+	min-height: 510px;	
 }
 
 .manufacturers {
 	min-height: 310px;
 	margin-top: 20px;
+	margin-bottom: 70px;
 	font-size: 0;		
 }
 
@@ -924,4 +924,119 @@ a {
 
 .manufacturers .manufacturer:nth-child(7) {	
 	padding-top: 25px;		
+}
+
+.info-block-4 {
+	min-height: 525px;
+	background: url("../img/car.png") no-repeat 634px 273px, #F2F6F8;
+}
+
+.services {
+	min-height: 110px;
+	width: 450px;
+	box-sizing: border-box;
+	padding-top: 70px;	
+}
+
+.services-title {
+	min-height: 30px;
+	width: 140px;
+	font-family: 'Cuprum';	
+	font-size: 30px;
+	font-weight: normal;	
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000;	
+}
+
+.services-text {
+	min-height: 50px;
+	width: 415px;
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 24px;	
+	color: #000;
+	margin-top: 30px;	
+}
+
+.block-shipping {
+	min-height: 270px;
+	width: 610px;
+	position: relative;		
+}
+
+.block-shipping-menu {
+	float: left;
+	margin-top: 55px;
+}
+
+.block-shipping-menu a, 
+.block-shipping-menu span {
+	display: block;
+	height: 65px;
+	width: 240px;
+	font-family: 'Cuprum';	
+	font-size: 21px;
+	font-weight: bold;	
+	line-height: 30px;	
+	background-color: #32425C;
+	color: #fff;
+	box-sizing: border-box;
+	border-bottom: 1px solid #293449;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
+.block-shipping-menu a:hover{	
+	background-color: #293449;
+	color: #fff;
+}
+
+.block-shipping-menu a:active{	
+	background-color: #1F2838;
+	color: #495D82;
+	border-color: #1F2838;	
+}
+
+.block-shipping-menu .active {	
+	background-color: #fff;
+	color: #32425C;
+}
+
+.border {
+	display: block;
+	position: absolute;
+	left: 230px;
+	top: 20px;
+}
+
+.shipping {
+	min-height: 170px;
+	width: 290px;
+	float: left;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+.shipping-title {
+	min-height: 36px;
+	width: 190px;
+	font-family: 'Cuprum';	
+	font-size: 36px;
+	font-weight: normal;	
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #32425c;		
+}
+
+.shipping-text {
+	min-height: 100px;
+	width: 280px;
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 24px;	
+	color: #000;
+	margin-top: 35px;		
 }

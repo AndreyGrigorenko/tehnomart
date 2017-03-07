@@ -51,8 +51,7 @@ a {
 	line-height: 18px;
 	min-height: 43px;
 	color: #fff;
-	background-color: #293449;
-	
+	background-color: #293449;	
 }
 
 .central-block-header-top {
@@ -1015,7 +1014,7 @@ a {
 
 .block-shipping-menu a:active{	
 	background-color: #1F2838;
-	color: #495D82;
+	color: #779EDB;
 	border-color: #1F2838;	
 }
 
@@ -1065,6 +1064,7 @@ a {
 .info-block-5 {
 	min-height: 535px;
 	background-color: #fff;
+	position: relative;
 }
 
 .company {
@@ -1172,6 +1172,7 @@ a {
 .map-img {
 	display: block;	
 	margin-top: 30px;
+	cursor: pointer;
 }
 
 .write-to-us {
@@ -1199,7 +1200,45 @@ a {
 
 .write-to-us:active {	
 	color: #fff;
-	background-color: #BA2732;	
+	background-color: #BA2732;		
+}
+
+.map {
+	width: 940px;
+	height: 433px;
+	position: absolute;
+	top: 45px;
+	left: 162px;	
+	box-shadow: 0px 5px 30px 0px #707377;			 
+}
+
+.close {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.map-close {	
+	position: absolute;
+	height: 21px;
+	width: 21px; 
+	top: 20px;
+	right: 20px;	
+	cursor: pointer;		 
+}
+
+ .map-close::after {
+	content: "";
+	position: absolute;
+	height: 21px;
+	width: 21px; 
+	top: 0px;
+	right: 0px;	
+	background-image: url("../img/sprite-3.png");
+	background-position: 46px;
+	cursor: pointer;	 
 }
 
 .main-footer {
@@ -1277,6 +1316,7 @@ a {
 
 .footer-top-links a:active {
 	color: #A4ABB4;
+	text-decoration: none;
 }
 
 .footer-top-links a:last-child {	
@@ -1289,11 +1329,12 @@ a {
 	font-weight: normal;	
 	line-height: 24px;	
 	color: #EBC27C;
-	margin-right: 56px;
+	margin-right: 55px;
 }
 
 .footer-bottom-links a:active {
 	color: #A08B6D;
+	text-decoration: none;
 }
 
 .footer-bottom-links a:first-child {	
@@ -1305,6 +1346,111 @@ a {
 }
 
 .footer-bottom {
+	font-family: 'Cuprum';	
+	font-size: 16px;
+	font-weight: normal;	
+	line-height: 18px;	
+	color: #fff;
 	min-height: 100px;
 	background-color: #293449;
+}
+
+.footer-copyright {	
+	min-height: 40px;
+	width: 235px;
+	float: left;
+	margin-top: 35px;
+}
+
+.social-btn {
+	min-height: 40px;
+	width: 150px;
+	float: left;
+	margin-left: 150px;
+	margin-top: 35px;	
+}
+
+.social-btn a {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	height: 40px;
+	width: 40px;	
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #212A3A;
+	position: relative;	
+}
+
+.social-btn a:hover {	
+	background-color: #EE3643;
+	transition-duration: 0.3s;	
+}
+
+.social-btn a:active {	
+	background-color: #BB2B34;	
+}
+
+.social-btn-vk::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 12px;
+	top: 13px;
+	left: 8px;
+	background-image: url("../img/sprite-4.png");
+	background-position: -27px 1px;	
+}
+	
+.social-btn-fb::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 18px;
+	top: 10px;
+	left: 14px;
+	background-image: url("../img/sprite-4.png");		
+}
+
+.social-btn-inst::before {
+	content: "";
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	top: 12px;
+	left: 12px;
+	background-image: url("../img/sprite-4.png");
+	background-position: -10px;	
+}
+
+.feedback {
+	min-height: 40px;
+	width: 140px;
+	float: left;
+	margin-top: 35px;
+	margin-left: 110px;		
+}
+
+.html-academy {
+	min-height: 40px;
+	width: 100px;
+	float: right;
+	margin-top: 35px;
+	margin-right: 10px;	
+}
+
+.feedback-text-2,
+.html-academy-text-2 {
+	color: #FFD180;		
+}
+
+.feedback-text-2:hover,
+.html-academy-text-2:hover {
+	text-decoration: underline;
+}
+
+.feedback-text-2:active,
+.html-academy-text-2:active {
+	color: #D13644;
+	text-decoration: none;
 }

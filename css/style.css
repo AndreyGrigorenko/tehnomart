@@ -680,6 +680,7 @@ a {
 
 .all-popular-products,
 .all-manufacturers {
+	display: block;
 	min-height: 38px;
 	width: 255px;
 	font-family: 'Cuprum';	
@@ -694,7 +695,26 @@ a {
 	padding-top: 11px;
 	text-align: center;
 	border-radius: 3px;
+}
 
+.all-popular-products:hover {	
+	color: #fff;
+	background-color: #CA2C37;	
+}
+
+.all-popular-products:active {	
+	color: #fff;
+	background-color: #BA2732;	
+}
+
+.all-manufacturers:hover {	
+	color: #fff;
+	background-color: #CA2C37;	
+}
+
+.all-manufacturers:active {	
+	color: #fff;
+	background-color: #BA2732;	
 }
 
 .catalog-items{
@@ -1009,6 +1029,7 @@ a {
 	position: absolute;
 	left: 230px;
 	top: 20px;
+	z-index: 2px;
 }
 
 .shipping {
@@ -1039,4 +1060,144 @@ a {
 	line-height: 24px;	
 	color: #000;
 	margin-top: 35px;		
+}
+
+.info-block-5 {
+	min-height: 535px;
+	background-color: #fff;
+}
+
+.company {
+	min-height: 370px;
+	width: 550px;
+	float: left;
+	margin-top: 83px;	
+}
+
+.company-title,
+.contacts-title {
+	min-height: 30px;
+	width: 350px;
+	font-family: 'Cuprum';	
+	font-size: 30px;
+	font-weight: normal;	
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000;	
+}
+
+.company-text-1 {
+	min-height: 45px;
+	width: 540px;
+	margin-top: 20px;
+}
+
+.company-text-2 {
+	min-height: 45px;
+	width: 400px;
+	margin-top: 20px;
+}
+
+.company-list {
+	font-family: 'Cuprum';	
+	font-size: 18px;
+	font-weight: normal;	
+	line-height: 20px;	
+	color: #000;
+	margin-top: 25px;	
+}
+
+.company-list li {	
+	margin-bottom: 20px;
+	padding-left: 35px;
+	position: relative;	
+}
+
+.company-list li::before {	
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 25px;
+	left: 0;
+	top: 5px;
+	background-image: url("../img/sprite-3.png"); 
+	background-position: 25px 2px;
+}
+
+.company-list li:last-child {	
+	margin-bottom: 0;	
+}
+
+.read-more {
+	display: block;
+	min-height: 40px;
+	width: 220px;
+	font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #EE3643;
+	box-sizing: border-box;	
+	padding-top: 12px;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 37px;
+}
+
+.read-more:hover {	
+	color: #fff;
+	background-color: #CA2C37;	
+}
+
+.read-more:active {	
+	color: #fff;
+	background-color: #BA2732;	
+}
+
+.info-block-5-contacts{
+	min-height: 370px;
+	width: 300px;
+	float: right;
+	margin-top: 83px;	
+}
+
+.contacts-text {
+	min-height: 40px;
+	width: 190px;
+	margin-top: 20px;
+}
+
+.map-img {
+	display: block;	
+	margin-top: 30px;
+}
+
+.write-to-us {
+	display: block;
+	min-height: 40px;
+	width: 300px;
+	font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #EE3643;
+	box-sizing: border-box;	
+	padding-top: 12px;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 42px;
+}
+
+.write-to-us:hover {	
+	color: #fff;
+	background-color: #CA2C37;	
+}
+
+.write-to-us:active {	
+	color: #fff;
+	background-color: #BA2732;	
 }

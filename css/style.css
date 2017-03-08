@@ -51,7 +51,11 @@ a {
 	line-height: 18px;
 	min-height: 43px;
 	color: #fff;
-	background-color: #293449;	
+	background-color: #293449;
+	position: fixed;
+	left: 161.5px;
+	right: 161.5px;
+	z-index: 2;	
 }
 
 .central-block-header-top {
@@ -96,9 +100,9 @@ a {
 .header-top-form {
 	float: left;
 	width: 270px;
-	height: 43px;
-	margin-left: 183px;
-    margin-left: 222px;position: relative;
+	height: 43px;	
+    margin-left: 222px;
+    position: relative;
 }
 
 .header-top-form input {	
@@ -246,7 +250,8 @@ a {
 
 .header-bottom {
 	min-height: 277px;
-	background-color: #F1F5F7;	
+	background-color: #F1F5F7;
+	padding-top: 43px;	
 }
 
 .header-bottom-text {
@@ -270,8 +275,6 @@ a {
 	margin-left: 80px;
 	margin-top: 45px;	
 }
-
-
 
 .phone {
 	font-family: 'Cuprum', "Tahoma", sans-serif;	
@@ -396,14 +399,13 @@ a {
 	color: #CACACA;	
 }
 
-
 .main-menu {
 	clear: both;	
 	width: 940px;
 	font-family: 'Cuprum', "Tahoma", sans-serif;	
 	font-size: 0;
 	font-weight: normal;	
-	line-height: 17px;	
+	line-height: 17px;		
 }
 
 .main-menu li {
@@ -415,7 +417,7 @@ a {
 .main-menu a {
 	display: block;
 	color: #fff;
-	padding: 20px 33px;
+	padding: 20px 33.5px;
 	padding-bottom: 15px;
 	font-size: 17px;
 	background-color: #32425C;

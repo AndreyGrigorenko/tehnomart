@@ -5,4 +5,11 @@ $(document).ready(function(){
 	$(".map-close").click(function(){
 		$(".map").removeClass("show");
 	});
+
+	$(".write-to-us").click(function(){
+		$(".form").slideDown();
+	});
+	$(".form-close").click(function(){
+		$(".form").slideUp();
+	});
 });

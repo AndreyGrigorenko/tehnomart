@@ -771,7 +771,7 @@ a {
     width:218px;
     height:88px;
     padding:40px 0;
-    background-color:rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
     z-index:10;
 }
 .catalog-item .actions .buy,
@@ -1175,8 +1175,7 @@ a {
 	cursor: pointer;
 }
 
-.write-to-us {
-	display: block;
+.write-to-us {	
 	min-height: 40px;
 	width: 300px;
 	font-family: 'Cuprum';	
@@ -1186,11 +1185,12 @@ a {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #EE3643;
-	box-sizing: border-box;	
-	padding-top: 12px;
+	border: none;	
+	outline: none;
 	text-align: center;
 	border-radius: 3px;
 	margin-top: 42px;
+	cursor: pointer;
 }
 
 .write-to-us:hover {	
@@ -1220,7 +1220,8 @@ a {
 	display: block;
 }
 
-.map-close {	
+.map-close,
+.form-close {	
 	position: absolute;
 	height: 21px;
 	width: 21px; 
@@ -1229,7 +1230,8 @@ a {
 	cursor: pointer;		 
 }
 
- .map-close::after {
+ .map-close::after,
+ .form-close::after {
 	content: "";
 	position: absolute;
 	height: 21px;
@@ -1239,6 +1241,107 @@ a {
 	background-image: url("../img/sprite-3.png");
 	background-position: 46px;
 	cursor: pointer;	 
+}
+
+.form {
+	height: 425px;
+	width: 620px;
+	position: absolute;
+	top: 200px;
+	left: 285px;
+	background-color: #fff;
+	border-top: 5px solid #EE3643;
+	box-sizing: border-box;
+	box-shadow: 0px 20px 50px 0px #171F2B;	
+	background-color red;
+}
+
+ 
+
+.forms-central-block {
+	height: 230px;
+	width: 463px;
+	margin-left: 80px;
+	margin-top: 40px;
+	background-color yellow;
+}
+
+.forms-central-block label {
+	font-family: 'Cuprum';	
+	font-size: 18px;
+	font-weight: normal;	
+	line-height: 18px;	
+	color: #000;
+}
+
+.forms-central-block input,
+.forms-central-block textarea {
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 18px;		
+	padding-left: 15px;
+	outline: none;
+	border: 2px solid #D7DCDE;	
+	border-radius: 3px;
+}
+
+.forms-central-block textarea {
+	padding-top: 10px;
+}
+
+.forms-central-block input,
+.forms-central-block .text1,
+.forms-central-block .text2 {
+	height: 35px;
+	width: 205px;
+}
+
+.forms-central-block .text1 {
+	float: left;
+	margin-bottom: 47px;
+}
+
+.forms-central-block .text2 {
+	float: left;
+	margin-left: 35px;
+}
+
+.forms-central-block .text3 {
+	clear: both;
+}
+
+.buttons-block {
+	height: 115px;
+	width: 620px;
+	background-color: #F1F1F1;
+	margin-top: 35px;
+}
+
+.send {
+	font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	height: 40px;
+	width: 460px;
+	background-color: #EE3643;
+	margin-top: 40px;
+	margin-left: 80px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 3px;	
+}
+
+.send:hover {	
+	background-color: #CA2C37;		
+}
+
+.send:active {	
+	background-color: #BA2732;		
 }
 
 .main-footer {

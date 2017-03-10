@@ -133,17 +133,17 @@ a {
 	top: 13px;
 	left: 17px;
 	background-image: url("../img/sprite-1.png");
-	background-position: 345px;	
+	background-position: 345px;		
 }
 
 .header-top-form:hover::before {	
 	background-image: url("../img/sprite-1.png");
-	background-position: 57px;	
+	background-position: 57px;
 }
 
 .header-top-bookmark {
 	display: block;
-	width: 163px;
+	width: 153px;
 	height: 43px;
 	background-color: #293449;
 	box-sizing: border-box;
@@ -186,7 +186,7 @@ a {
 
 .basket {
 	display: block;
-	width: 135px;
+	width: 145px;
 	height: 43px;
 	background-color: #293449;
 	box-sizing: border-box;
@@ -194,7 +194,8 @@ a {
 	padding-left: 35px;
 	float: left;
 	cursor: pointer;
-	position: relative;		
+	position: relative;
+	text-align: center;		
 }
 
 .basket:hover {	
@@ -212,7 +213,7 @@ a {
 	width: 17px;
 	position: absolute;
 	top: 13px;
-	left: 0px;
+	left: 15px;
 	background-image: url("../img/sprite-1.png");
 	background-position: 0px 0.5px;
 }
@@ -296,7 +297,7 @@ a {
 	height: 19px;
 	width: 19px;
 	position: absolute;
-	left: 15px;
+	left: 20px;
 	background-image: url("../img/sprite-1.png");
 	background-position: -145px;
 
@@ -448,7 +449,7 @@ a {
 	height: 125px;
 	width: 300px;
 	margin-bottom: 17.5px;
-	position: relative;
+	position: relative;	
 }
 
 .item-1::after {
@@ -506,7 +507,7 @@ a {
 	background-position: -59px;
 }
 
-.item-3,
+.item-3-slider,
 .item-6 {
 	margin-bottom: 0;
 }
@@ -529,11 +530,170 @@ a {
 	background-color: #4AAFDE;
 }
 
-.item-3 {
-	height: 267px;
+.item-3-slider {
+	height: 266px;
 	width: 620px;
 	clear: both;
-	background-color: red;
+	position: relative;   
+	
+}
+
+.slider input[type=radio] {
+    position: absolute;   
+    opacity: 0;   
+}
+
+.slider-controls{
+    position:absolute;
+    bottom: 30px;
+    left: 290px;
+    width:50px;
+    height:15px;  
+    text-align:center;
+    z-index:1000;   
+}
+
+.slider-controls label{
+    display:inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    background:white;
+    font-size: 0;
+    border:2px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] { 
+    background: #EE3643;
+}
+
+.slide {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.slide-block {
+    height: 105px;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.slide-title {
+    height: 36px;
+    width: 220px;   
+    font-family: 'Cuprum';	
+	font-size: 36px;
+	font-weight: bold;	
+	line-height: 36px;    
+    text-transform: uppercase;
+    color: #fff;    
+}
+
+.slide-text {
+    height: 36px;
+    width: 250px;   
+    font-family: 'PT Sans';	
+	font-size: 18px;
+	font-weight: normal;	
+	line-height: 24px;    
+    color: #fff;
+    margin-top: 5px;
+}
+
+.slide .btn{
+    display:block;
+    width:195px;
+   	height: 40px;    
+    font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;	
+    text-align: center;
+    text-decoration: none;    
+    background-color: #EE3643;
+    border-radius:3px;
+    box-sizing: border-box;
+    padding-top: 12px;
+    margin-top: 75px;
+    margin-left: 25px;
+}
+
+.slide .btn:hover {    
+    background-color: #CA2C37;   
+}
+
+.slide .btn:active {    
+    background-color: #BA2732;   
+}
+
+.left {
+    position:absolute;
+    top: 115px;
+    left: 25px;
+    width: 22px;
+    height: 40px;
+    cursor: pointer;       
+}
+
+.left::before {
+	content: "";
+    position:absolute;    
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/sprite-6.png");            
+}
+
+.right {
+    position:absolute;
+    top: 115px;
+    right: 25px;
+    width: 22px;
+    height: 40px;
+    cursor: pointer;       
+}
+
+.right::after {
+	content: "";
+    position:absolute;    
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/sprite-6.png");
+    background-position: 22px;            
+}
+
+.slide:nth-child(1){
+    background-image:url("../img/slider-1.jpg");
+    background-repeat:no-repeat;
+    background-position:100%;
+}
+
+.slide:nth-child(2){
+    background-image:url("../img/slider-2.jpg");
+    background-repeat:no-repeat;
+    background-position:100%;
+}
+
+.slide{
+    display:none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
 }
 
 .items-2 {
@@ -1559,3 +1719,47 @@ a {
 	color: #D13644;
 	text-decoration: none;
 }
+
+
+
+/* Каталог */
+
+.basket-red {
+	background-color: #EE3643;
+}
+
+.basket-red:hover {
+	background-color: #EE3643;
+}
+
+.basket-red:active {
+	background-color: #EE3643;
+	color: #F3727B;
+}
+
+.info-block-10 {
+	height: 262px;
+	background-color: #F2F6F8;
+	box-sizing: border-box;
+	padding-top: 45px;	
+}
+
+.info-block-10-title {	
+	font-family: 'Cuprum';	
+	font-size: 30px;
+	font-weight: normal;	
+	line-height: 30px;	
+	height: 30px;
+	color: #000;	
+}
+
+.info-block-10-text {
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 24px;	
+	height: 80px;
+	width: 940px;
+	color: #000;	
+}
+

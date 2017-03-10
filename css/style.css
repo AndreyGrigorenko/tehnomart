@@ -1898,8 +1898,132 @@ a {
 	margin-left: 30px;	
 }
 
+.left-side-bar {
+	width: 220px;
+	height: 750px;
+	float: left;
+	margin-top: 20px;
+	background-color: red;
 
+}
 
+.main-container {
+	width: 700px;
+	height: 1145px;
+	float: right;
+	margin-top: 20px;
+	background-color red;
+}
+
+.sorting {
+	width: 700px;
+	height: 40px;	
+	background-color: #F7F3EC;
+	border-radius: 3px;
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 18px;	
+	color: #000;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+
+.sorting-text {
+	margin-left: 20px;
+}
+
+.active-2 {
+	color: #EE3643;	
+	margin-left: 140px;
+}
+
+.type,
+.functionality {
+	color: #D3CFC9;
+	border-bottom: 1px dotted #EE3643;
+	margin-left: 70px;
+}
+
+.type:hover,
+.functionality:hover {
+	color: #000;
+	border-bottom: 1px solid #EE3643;
+}
+
+.type:active,
+.functionality:active {
+	color: #EE3643;
+	border: none;	
+}
+
+.filter-up,
+.filter-down {
+	height: 10px;
+	width: 10px;
+	margin-top: 3px;
+	position: relative;
+	cursor: pointer;	
+}
+
+.filter-down {
+	float: right;
+	margin-right: 20px;
+}
+
+.filter-down::before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-image: url("../img/sprite-3.png");
+	background-position: -32px 0px;
+}
+
+.filter-up {
+	float: right;
+	margin-right: 20px;	
+}
+
+.filter-up::before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-image: url("../img/sprite-3.png");
+	background-position: -12px 0px;
+}
+
+.filter-up:hover::before {	
+	background-image: url("../img/sprite-3.png");
+	background-position: -1px 0px;
+}
+
+.filter-up:active::before {	
+	background-image: url("../img/sprite-3.png");
+	background-position: -22px 0px;
+}
+
+.catalog-2-items {
+	width: 700px;
+	font-size: 0;
+}
+
+.catalog-2-item {
+	margin-left: 0;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.catalog-2-item:nth-child(3n) {	
+	margin-right: 0;
+}
+
+.catalog-2-item img:first-child,
+.catalog-2-item img:nth-child(2),
+.catalog-2-item img:nth-child(9) {	
+	margin-top: 20px;
+}
 
 
 

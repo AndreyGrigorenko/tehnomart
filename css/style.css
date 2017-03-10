@@ -37,6 +37,7 @@ a {
 .central-block {
 	width: 940px;
 	margin: 0 auto;
+	position: relative;
 	background-color yellow;	
 }
 
@@ -53,8 +54,8 @@ a {
 	color: #fff;
 	background-color: #293449;
 	position: fixed;
-	left: 161.5px;
-	right: 161.5px;
+	left: 0;
+	right: 0;
 	z-index: 2;	
 }
 
@@ -1108,8 +1109,12 @@ a {
 }
 
 .info-block-4 {
-	min-height: 525px;
-	background: url("../img/car.png") no-repeat 634px 273px, #F2F6F8;
+	height: 525px;
+	background-color: #F2F6F8;
+}
+
+.info-block-4 .central-block {	
+	background: url("../img/car.png") no-repeat 473px 273px;
 }
 
 .services {
@@ -1225,8 +1230,7 @@ a {
 
 .info-block-5 {
 	min-height: 535px;
-	background-color: #fff;
-	position: relative;
+	background-color: #fff;	
 }
 
 .company {
@@ -1365,12 +1369,12 @@ a {
 	background-color: #BA2732;		
 }
 
+
 .map {
 	width: 940px;
 	height: 433px;
 	position: absolute;
 	top: 45px;
-	left: 162px;	
 	box-shadow: 0px 5px 30px 0px #707377;			 
 }
 
@@ -1410,15 +1414,14 @@ a {
 	width: 620px;
 	position: absolute;
 	top: 200px;
-	left: 285px;
+	left: 161.5px;
+	right: 161.5px;
 	background-color: #fff;
 	border-top: 5px solid #EE3643;
 	box-sizing: border-box;
-	box-shadow: 0px 20px 50px 0px #171F2B;	
-	background-color red;
-}
-
- 
+	box-shadow: 0px 20px 50px 0px #171F2B;
+	z-index: 3;	
+} 
 
 .forms-central-block {
 	height: 230px;
@@ -1426,6 +1429,7 @@ a {
 	margin-left: 80px;
 	margin-top: 40px;
 	background-color yellow;
+
 }
 
 .forms-central-block label {
@@ -1507,7 +1511,7 @@ a {
 }
 
 .main-footer {
-	min-height: 300px;
+	min-height: 300px;	
 }
 
 .footer-top {

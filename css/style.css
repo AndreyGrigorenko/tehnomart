@@ -1907,6 +1907,143 @@ a {
 
 }
 
+.forms-filter {
+	width: 220px;
+	height: 40px;
+	background-color: #F7F3EC;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-top: 8px;
+	text-transform: uppercase;
+}
+
+.side-bar-form {
+	width: 220px;
+	height: 690px;
+	margin-top: 20px;
+	background-color: blue;
+}
+
+.forms-prise {
+	width: 220px;
+	height: 187px;	
+	background-color: green;
+}
+
+.forms-manufactures {
+	width: 220px;
+	height: 262px;
+	border-top: 1px solid #E5E5E5;	
+	background-color: #fff;
+}
+
+.forms-manufactures-title {
+	font-family: 'PT Sans';	
+	font-size: 17px;
+	font-weight: bold;	
+	line-height: 30px;
+	text-transform: uppercase;	
+}
+
+.forms-manufactures-text {
+	font-family: 'PT Sans';	
+	font-size: 15px;
+	font-weight: normal;	
+	line-height: 20px;
+	text-transform: uppercase;	
+	width: 120px;
+	height: 185px;		
+	background-color yellow;
+}
+
+.forms-manufactures-title {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.forms-manufactures-text label {
+	margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	padding-left: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 23px;	
+	background: url(../img/sprite-5.png);
+	background-position: -46px;
+	top: 0;
+	left: 0;	
+}
+
+input[type="checkbox"] + label:hover::before {
+	background: url(../img/sprite-5.png);
+	background-position: -23px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+	background: url(../img/sprite-5.png);
+	background-position: 0px;		
+}
+
+input[type="checkbox"]:disabled + label {
+  color: #B4B4B4;
+  cursor: default;
+}
+
+
+input[type="checkbox"]:checked + label::after {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 27px;	
+	background: url(../img/sprite-5.png);
+	background-position: -96px;
+	top: 0;
+	left: 0;
+}
+
+input[type="checkbox"]:checked:hover + label::after {	
+	background: url(../img/sprite-5.png);
+	background-position: -69px;	
+}
+
+input[type="checkbox"]:checked:disabled + label::after {
+	background: url(../img/sprite-5.png);
+	background-position: -123px;
+
+}
+
+
+
+.forms-food {
+	width: 220px;
+	height: 239px;
+	border-top: 1px solid #E5E5E5;	
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
 .main-container {
 	width: 700px;
 	height: 1145px;
@@ -1927,6 +2064,7 @@ a {
 	color: #000;
 	box-sizing: border-box;
 	padding-top: 10px;
+	text-transform: uppercase;
 }
 
 .sorting-text {
@@ -1968,7 +2106,7 @@ a {
 
 .filter-down {
 	float: right;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .filter-down::before {

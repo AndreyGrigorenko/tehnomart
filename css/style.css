@@ -56,7 +56,7 @@ a {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 2;	
+	z-index: 120;	
 }
 
 .central-block-header-top {
@@ -80,7 +80,7 @@ a {
 	top: 0;
 	left: 0;
 	position: absolute;
-	z-index: 1;
+	z-index: 130;
 	cursor: pointer;
 }
 
@@ -916,15 +916,15 @@ a {
 	margin-top: 20px;
 }
 
-.catalog-item .flag-new{
+.catalog-item .flag-new {
 	position:absolute;
     top:-1px;
     right:-1px;
     width:60px;
     height:60px;
-    text-indent:-1000px;
+    text-indent: -1000px;
     overflow:hidden;
-     z-index:20;
+    z-index: 100;
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .catalog-item .actions{
@@ -962,6 +962,7 @@ a {
 .catalog-item .actions .buy {	
 	 border-bottom-color: #377416;
 	 position: relative;
+	 cursor: pointer;
 }
 
 .catalog-item .actions .buy:hover {     
@@ -1386,17 +1387,16 @@ a {
 	display: block;
 }
 
-.map-close,
-.form-close {	
+.form-close  {	
 	position: absolute;
 	height: 21px;
 	width: 21px; 
 	top: 20px;
 	right: 20px;	
-	cursor: pointer;		 
+	cursor: pointer;
+	z-index: 11;		 
 }
-
- .map-close::after,
+ 
  .form-close::after {
 	content: "";
 	position: absolute;
@@ -2258,6 +2258,97 @@ input[type="radio"]:checked:disabled + label::after {
 .catalog-2-item img:nth-child(9) {	
 	margin-top: 20px;
 }
+
+.add-product-form {
+	height: 275px;
+	width: 620px;
+	position: absolute;
+	top: 450px;
+	z-index: 110;
+	left: 150px;
+	border-top: 7px solid #EE3643;
+	box-shadow: 0 20px 50px 0 #7D7D7D;
+	background-color: #EEE8AA;
+}
+
+.add-product-block-1 {
+	height: 165px;
+	background-color: #fff;
+	position: relative;
+}
+
+.add-product-block-1::before {
+	content: "";
+	position: absolute;
+	height: 66px;
+	width: 66px;
+	top: 50px; 
+	left: 80px;
+	background-image: url("../img/ok.png");
+}
+
+.add-product-block-1-text {
+	font-family: 'Cuprum';	
+	font-size: 30px;
+	font-weight: normal;	
+	line-height: 30px;
+	height: 30px;
+	width: 330px;
+	color: #000;	
+	margin-left: 180px;
+	box-sizing: border-box;
+	padding-top: 70px;
+}
+
+.add-product-block-2 {
+	height: 110px;
+	background-color: #F1F1F1;
+	box-sizing: border-box;
+	padding-top: 45px;
+}
+
+.add-product-block-2 a {	
+	font-family: 'Cuprum';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 18px;
+	padding: 12px 60px;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.add-product-block-2 a:first-child {	
+	background-color: #EE3643;
+	color: #fff;
+	margin-left: 80px;
+	cursor: pointer;
+}
+
+.add-product-block-2 a:first-child:hover {	
+	background-color: #CA2C37;	
+}
+
+.add-product-block-2 a:first-child:active {	
+	background-color:#BA2732;	
+}
+
+.add-product-block-2 a:last-child {	
+	background-color: #fff;
+	color: #000;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.add-product-block-2 a:last-child:hover {	
+	background-color: #63A63E;
+	color: #fff;	
+}
+
+.add-product-block-2 a:last-child:active {	
+	background-color: #518534;
+	color: #fff;	
+}
+
 
 .switches-pages {
 	font-family: 'PT Sans';	

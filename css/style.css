@@ -1903,8 +1903,6 @@ a {
 	height: 750px;
 	float: left;
 	margin-top: 20px;
-	background-color: red;
-
 }
 
 .forms-filter {
@@ -1921,8 +1919,7 @@ a {
 .side-bar-form {
 	width: 220px;
 	height: 690px;
-	margin-top: 20px;
-	background-color: blue;
+	margin-top: 20px;	
 }
 
 .forms-prise {
@@ -1943,7 +1940,9 @@ a {
 	font-size: 17px;
 	font-weight: bold;	
 	line-height: 30px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;	
 }
 
 .forms-manufactures-text {
@@ -1955,11 +1954,6 @@ a {
 	width: 120px;
 	height: 185px;		
 	background-color yellow;
-}
-
-.forms-manufactures-title {
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 .forms-manufactures-text label {
@@ -2026,30 +2020,132 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 }
 
-
-
 .forms-food {
 	width: 220px;
 	height: 239px;
 	border-top: 1px solid #E5E5E5;	
-	background-color: green;
+}
+
+.forms-food-text {
+	font-family: 'PT Sans';	
+	font-size: 14px;
+	font-weight: normal;	
+	line-height: 20px;
+	text-transform: uppercase;	
+	width: 160px;
+	height: 65px;	
+}
+
+.forms-food-title {
+	font-family: 'PT Sans';	
+	font-size: 17px;
+	font-weight: bold;	
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.forms-food-text label {
+	margin-bottom: 20px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	display: block;
+	padding-left: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 25px;	
+	background: url(../img/sprite-5.png);
+	background-position: 100px;
+	top: 0;
+	left: 0;	
+}
+
+input[type="radio"] + label:hover::before {
+	background: url(../img/sprite-5.png);
+	background-position: 125px;
+}
+
+input[type="radio"]:disabled + label::before {
+	background: url(../img/sprite-5.png);
+	background-position: 150px;		
+}
+
+input[type="radio"]:disabled + label {
+  color: #B4B4B4;
+  cursor: default;
 }
 
 
+input[type="radio"]:checked + label::after {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 25px;	
+	background: url(../img/sprite-5.png);
+	background-position: 25px;
+	top: 0;
+	left: 0;
+}
 
+input[type="radio"]:checked:hover + label::after {	
+	background: url(../img/sprite-5.png);
+	background-position: 50px;	
+}
 
+input[type="radio"]:checked:disabled + label::after {
+	background: url(../img/sprite-5.png);
+	background-position: 75px;
 
+}
 
+.forms-food-show {
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 18px;
+	text-transform: uppercase;
+	width: 140px;
+	height: 35px;
+	margin-top: 80px;
+	outline: none;
+	border: 1px solid #CCCCCC;
+	background-color: #fff;	
+	color: #000;
+	border-radius: 3px;
+	cursor: pointer;	
+}
 
+.forms-food-show:hover {	
+	background-color: #EE3643;
+	color: #fff;
+	border-color: #EE3643;
+	transition-duration: 0.3s;
+}
 
-
+.forms-food-show:active {	
+	background-color: #CA2C37;
+	color: #fff;
+	border-color: #CA2C37;
+}
 
 .main-container {
 	width: 700px;
-	height: 1145px;
+	height: 1100px;
 	float: right;
 	margin-top: 20px;
-	background-color red;
+	margin-bottom: 20px;	
 }
 
 .sorting {
@@ -2163,8 +2259,48 @@ input[type="checkbox"]:checked:disabled + label::after {
 	margin-top: 20px;
 }
 
+.switches-pages {
+	font-family: 'PT Sans';	
+	font-size: 13px;
+	font-weight: normal;	
+	line-height: 18px;
+	height: 40px;
+	width: 310px;
+	color: #000;	
+	margin-left: 240px;
+	box-sizing: border-box;
+	padding-top: 11px;
+	clear: both;		
+}
 
+.switches-pages a {
+	padding: 10px 15px;
+	margin-right: 10px;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	color: #000;
+	background-color: #fff;
+	text-transform: uppercase;	
+}
 
+.switches-pages a:hover {	
+	border-color: #ACB5B8;	
+}
+
+.switches-pages a:active {	
+	border-color: #EE3643;	
+}
+
+.switches-pages a:last-child {
+	padding: 10px 22px;	
+}
+
+.switches-pages a:first-child {
+	background-color: #EE3643;
+	color: #fff;
+	border-color: #EE3643;
+	cursor: default;
+}
 
 .info-block-10-title {	
 	font-family: 'Cuprum';	

@@ -37,8 +37,7 @@ a {
 .central-block {
 	width: 940px;
 	margin: 0 auto;
-	position: relative;
-	background-color yellow;	
+	position: relative;		
 }
 
 .main-header {
@@ -301,7 +300,6 @@ a {
 	left: 20px;
 	background-image: url("../img/sprite-1.png");
 	background-position: -145px;
-
 }
 
 .adress {
@@ -520,7 +518,6 @@ a {
 	box-sizing: border-box;	
 }
 
-
 .item-1 {
 	float: left;
 	background-color: #F6B22D;
@@ -535,8 +532,7 @@ a {
 	height: 266px;
 	width: 620px;
 	clear: both;
-	position: relative;   
-	
+	position: relative;	
 }
 
 .slider input[type=radio] {
@@ -708,7 +704,6 @@ a {
 	background-color: #CC79D1;
 	box-sizing: border-box;
 	float: left;
-
 }
 
 .item-5 {	
@@ -884,9 +879,11 @@ a {
     margin:20px auto;
     background-color red;
 }
+
 .catalog-items .row{
     margin-left:-20px;
 }
+
 .catalog-item{
     position:relative;
     display:inline-block;
@@ -897,9 +894,11 @@ a {
     font-weight:bold;
     text-align:center;
 }
+
 .catalog-items{
     font-size:0;
 }
+
 .catalog-item{
     font-size:16px;
 }
@@ -912,6 +911,7 @@ a {
 .catalog-item-4 img {
 	margin-top: 30px;
 }
+
 .catalog-item-3 img {
 	margin-top: 20px;
 }
@@ -927,6 +927,7 @@ a {
     z-index: 100;
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
+
 .catalog-item .actions{
     position:absolute;
     top:0;
@@ -937,6 +938,7 @@ a {
     background-color: rgba(255,255,255,0.9);
     z-index:10;
 }
+
 .catalog-item .actions .buy,
 .catalog-item .actions .bookmark{
     display:block;
@@ -958,17 +960,16 @@ a {
     outline: none;
 }
 
-
 .catalog-item .actions .buy {	
-	 border-bottom-color: #377416;
-	 position: relative;
-	 cursor: pointer;
+	border-bottom-color: #377416;
+	position: relative;
+	cursor: pointer;
 }
 
 .catalog-item .actions .buy:hover {     
     background-color: #5FBB2D;
     border-color: #5FBB2D; 
-     border-bottom-color:  #377416;   
+    border-bottom-color:  #377416;   
 }
 
 .catalog-item .actions .buy:active {     
@@ -977,18 +978,18 @@ a {
 }
 
 .catalog-item .actions .buy::before {	
-	 content: "";
-	 position: absolute;
-	 width: 17px;
-	 height: 16px;
-	 left: 10px;	 
-	 background-image: url("../img/sprite-1.png");
-	 background-position: 0px 0.5px;
+	content: "";
+	position: absolute;
+	width: 17px;
+ 	height: 16px;
+	left: 10px;	 
+	background-image: url("../img/sprite-1.png");
+	background-position: 0px 0.5px;
 }
 
 .catalog-item .actions .buy:hover::before {	 
-	 background-image: url("../img/sprite-1.png");
-	 background-position: -17px 0.5px;
+	background-image: url("../img/sprite-1.png");
+	background-position: -17px 0.5px;
 }
 
 .catalog-item .actions .bookmark{
@@ -1009,22 +1010,27 @@ a {
 .catalog-item .actions{
     display:none;
 }
+
 .catalog-item:hover .actions{
     display:block;
 }
+
 .catalog-item .image{
     width:218px;
     height:168px;
 }
+
 .catalog-item .image img{
     max-width:100%;
 }
+
 .catalog-item .title{
     min-height:40px;
     padding:0 25px;
     margin-top:10px;
     margin-bottom:15px;    
 }
+
 .catalog-item .discount{
     min-height:20px;
     margin-top:15px;
@@ -1032,6 +1038,7 @@ a {
     color:#999;
     text-decoration:line-through;
 }
+
 .catalog-item .price{
     position:relative;
     width:80px;
@@ -1042,6 +1049,7 @@ a {
     background:#ee3643;
     border-radius:3px;
 }
+
 .catalog-item .price:after{
     content:"";
     position:absolute;
@@ -1053,15 +1061,13 @@ a {
     border-left-color:#ee3643;
 }
 
-
 .info-block-3 {
 	min-height: 510px;	
 }
 
 .manufacturers {
 	min-height: 310px;
-	margin-top: 20px;
-	margin-bottom: 70px;
+	margin-top: 20px;	
 	font-size: 0;		
 }
 
@@ -1774,7 +1780,6 @@ a {
 	background-position: 40px 0.5px;		
 }
 
-
 .coming-user::after {
 	content: "";
 	position: absolute;
@@ -1869,7 +1874,6 @@ a {
 	position: relative;	
 } 
 
-
 .position-text:before {
 	content: "";
 	position: absolute;
@@ -1922,16 +1926,100 @@ a {
 	margin-top: 20px;	
 }
 
-.forms-prise {
+.forms-prise {	
 	width: 220px;
 	height: 187px;	
-	background-color: green;
+}
+
+.forms-prise-title {
+	font-family: 'PT Sans';	
+	font-size: 17px;
+	font-weight: bold;	
+	line-height: 17px;
+	text-transform: uppercase;
+}
+
+.range-filter {
+ 	width: 220px;
+  	margin-top: 20px; 
+}
+
+.range-controls {
+  	position: relative;
+  	height: 41px;
+  	padding-top: 39px;
+  	padding-right: 20px;
+  	padding-left: 20px;
+  	margin-bottom: 10px;
+  	border-radius: 5px;
+  	background: #F7F3EC;
+}
+
+.range-controls .scale {
+  	height: 2px;
+  	background: #D7DCDE;
+}
+
+.range-controls .bar {
+  	width: 80%;
+  	height: 2px;
+  	background: #00ca74;
+}
+
+.range-controls .toggle {
+ 	 position: absolute;
+  	top: 30px;
+  	left: 0px;
+  	width: 4px;
+  	height: 4px;
+  	cursor: pointer;
+  	border: 8px solid #fff;
+ 	border-radius: 50%;
+  	background: #ababab;
+  	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  	left: 20px;
+}
+
+.range-controls .toggle-max {
+  	left: 160px;
+}
+
+.price-controls {
+  	font-size: 0;
+}
+
+.price-controls span {
+ 	display: inline-block;
+ 	font-size: 17px;   
+ 	padding-right: 13px;
+ 	padding-left: 13px; 
+}
+
+.max-price {
+  	text-align: right;
+}
+
+.price-controls input {
+  	font-family: 'PT Sans', 'Arial', sans-serif;
+  	font-size: 17px;
+  	width: 70px;
+  	margin-left: 0;   
+  	padding: 8px 10px;
+  	text-align: center;
+  	color: #000;
+  	border: none;
+ 	outline: none;
+  	border-radius: 3px;
+  	background: #F7F3EC;
 }
 
 .forms-manufactures {
 	width: 220px;
 	height: 262px;
-	border-top: 1px solid #E5E5E5;	
+	border-top: 2px solid #E5E5E5;	
 	background-color: #fff;
 }
 
@@ -1997,6 +2085,13 @@ input[type="checkbox"]:disabled + label {
   cursor: default;
 }
 
+input:hover + label {
+  color: #EE3643; 
+}
+
+input:active + label {
+  color: #CA2C37; 
+}
 
 input[type="checkbox"]:checked + label::after {
 	content: "";
@@ -2023,7 +2118,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .forms-food {
 	width: 220px;
 	height: 239px;
-	border-top: 1px solid #E5E5E5;	
+	border-top: 1px solid #E5E5E5;		
 }
 
 .forms-food-text {
@@ -2083,8 +2178,8 @@ input[type="radio"]:disabled + label::before {
 }
 
 input[type="radio"]:disabled + label {
-  color: #B4B4B4;
-  cursor: default;
+  	color: #B4B4B4;
+  	cursor: default;
 }
 
 
@@ -2107,7 +2202,6 @@ input[type="radio"]:checked:hover + label::after {
 input[type="radio"]:checked:disabled + label::after {
 	background: url(../img/sprite-5.png);
 	background-position: 75px;
-
 }
 
 .forms-food-show {
@@ -2348,7 +2442,6 @@ input[type="radio"]:checked:disabled + label::after {
 	background-color: #518534;
 	color: #fff;	
 }
-
 
 .switches-pages {
 	font-family: 'PT Sans';	

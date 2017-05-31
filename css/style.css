@@ -116,16 +116,16 @@ a {
 	color: #fff;	
 }
 
-.header-top-form input:hover {	
+.input-search:hover {	
 	background-color: #212A3A;	
 }
 
-.header-top-form input:focus {	
+.input-search:focus {	
 	background-color: #fff;
 	color: #000;
 }
 
-.header-top-form::before {
+.label-search::before {
 	content: "";
 	height: 17px;
 	width: 17px;
@@ -136,9 +136,9 @@ a {
 	background-position: 345px;		
 }
 
-.header-top-form:hover::before {	
+.input-search:focus+.label-search::before {	
 	background-image: url("../img/sprite-1.png");
-	background-position: 57px;
+	background-position: 74px 0.5px;
 }
 
 .header-top-bookmark {
@@ -528,85 +528,48 @@ a {
 	background-color: #4AAFDE;
 }
 
-.item-3-slider {
-	height: 266px;
-	width: 620px;
-	clear: both;
-	position: relative;	
+.product-item.slider {
+  	float: left;
+  	box-sizing: border-box;
+  	width: 620px;
+  	height: 266px;
+  	padding: 0;
 }
 
-.slider input[type=radio] {
-    position: absolute;   
-    opacity: 0;   
-}
-
-.slider-controls{
-    position:absolute;
-    bottom: 30px;
-    left: 290px;
-    width:50px;
-    height:15px;  
-    text-align:center;
-    z-index:1000;   
-}
-
-.slider-controls label{
-    display:inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 3px;
-    background:white;
-    font-size: 0;
-    border:2px solid white;
-    vertical-align:top;
-    border-radius:50%;
-    cursor:pointer;
-}
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"] { 
-    background: #EE3643;
+.slider input {
+  	display: none;
 }
 
 .slide {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    overflow: hidden;
+  	position: relative;
+  	display: none;
+  	box-sizing: border-box;
+  	width: 620px;
+  	height: 266px;
+  	padding: 22px 25px;
 }
 
-.slide-block {
-    height: 105px;
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
+.slide-content h2 {
+ 	 margin: 0;
+  	margin-bottom: 7px;
+  	font-size: 36px;
+  	font-weight: 700;
+  	line-height: 30px;
+  	text-transform: uppercase;
+  	color: #ffffff;
 }
 
-.slide-title {
-    height: 36px;
-    width: 220px;   
-    font-family: 'Cuprum';	
-	font-size: 36px;
-	font-weight: bold;	
-	line-height: 36px;    
-    text-transform: uppercase;
-    color: #fff;    
+.slide-content p {
+ 	margin: 0;
+  	font-family: "PT Sans", "Georgia", sans-serif;
+  	font-size: 18px;
+  	font-weight: 400;
+  	line-height: 24px;
+  	letter-spacing: 1px;
+  	color: #ffffff;
 }
 
-.slide-text {
-    height: 36px;
-    width: 250px;   
-    font-family: 'PT Sans';	
-	font-size: 18px;
-	font-weight: normal;	
-	line-height: 24px;    
-    color: #fff;
-    margin-top: 5px;
-}
-
-.slide .btn{
+.slide-content .btn{
     display:block;
     width:195px;
    	height: 40px;    
@@ -622,75 +585,118 @@ a {
     border-radius:3px;
     box-sizing: border-box;
     padding-top: 12px;
-    margin-top: 75px;
-    margin-left: 25px;
+    margin-top: 125px;
+    margin-left: 0;
 }
 
-.slide .btn:hover {    
+.slide-content .btn:hover {    
     background-color: #CA2C37;   
 }
 
-.slide .btn:active {    
+.slide-content .btn:active {    
     background-color: #BA2732;   
 }
 
-.left {
-    position:absolute;
-    top: 115px;
-    left: 25px;
-    width: 22px;
-    height: 40px;
-    cursor: pointer;       
+.slide-controls {
+  	position: absolute;
+  	bottom: 30px;
+  	left: 290px;
 }
 
-.left::before {
-	content: "";
-    position:absolute;    
-    width: 22px;
-    height: 40px;
-    background-image: url("../img/sprite-6.png");            
+.slide-controls label {
+  	display: inline-block;
+  	vertical-align: top;
+  	width: 6px;
+  	height: 6px;
+  	margin-right: 5px;
+  	cursor: pointer;
+  	border: 2px solid #fff;
+ 	border-radius: 50%;
+  	background: #fff;
 }
 
-.right {
-    position:absolute;
-    top: 115px;
-    right: 25px;
-    width: 22px;
-    height: 40px;
-    cursor: pointer;       
+input#slide1:checked~.slide1,
+input#slide2:checked~.slide2 {
+  	display: block;
 }
 
-.right::after {
-	content: "";
-    position:absolute;    
-    width: 22px;
-    height: 40px;
-    background-image: url("../img/sprite-6.png");
-    background-position: 22px;            
+input#slide1:checked~.slide label[for="slide1"],
+input#slide2:checked~.slide label[for="slide2"] {
+ 	background: #ee3643;
 }
 
-.slide:nth-child(1){
-    background-image:url("../img/slider-1.jpg");
-    background-repeat:no-repeat;
-    background-position:100%;
+input#slide1:checked~.slide label[for="slide1"].arrow-left,
+input#slide2:checked~.slide label[for="slide2"].arrow-right {
+  	background-color: transparent;
 }
 
-.slide:nth-child(2){
-    background-image:url("../img/slider-2.jpg");
-    background-repeat:no-repeat;
-    background-position:100%;
+.arrow-left {
+  	position: absolute;
+  	top: 115px;
+  	left: 20px;
+  	width: 25px;
+  	height: 40px;
+  	cursor: pointer;
 }
 
-.slide{
-    display:none;
+.arrow-right {
+  	position: absolute;
+  	top: 117px;
+  	right: 15px;
+  	width: 25px;
+  	height: 40px;
+  	cursor: pointer;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
-    display: block;
+.arrow-left::after, .arrow-left::before, .arrow-right::after, .arrow-right::before {
+  	position: absolute;
+  	content: "";
+  	width: 23px;
+  	height: 3px;
+  	background: #ffffff;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
-    display: block;
+.arrow-left::after {
+  	-webkit-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+  	-webkit-transform-origin: right;
+  	transform-origin: right;
+}
+
+.arrow-left::before {
+  	top: 15px;
+  	left: 6px;
+  	-webkit-transform: rotate(45deg);
+  	transform: rotate(45deg);
+  	-webkit-transform-origin: left;
+  	transform-origin: left;
+}
+
+.arrow-right::after {
+  	-webkit-transform: rotate(45deg);
+  	transform: rotate(45deg);
+  	-webkit-transform-origin: left;
+  	transform-origin: left;
+}
+
+.arrow-right::before {
+  	top: 15px;
+  	right: 8px;
+  	-webkit-transform: rotate(-45deg);
+ 	 transform: rotate(-45deg);
+  	-webkit-transform-origin: right;
+  	transform-origin: right;
+}
+
+.slide1 {
+  	width: 620px;
+  	height: 266px;
+  	background: url("../img/slider-1.jpg") no-repeat;
+}
+
+.slide2 {
+  	width: 620px;
+  	background: url("../img/slider-2.jpg") no-repeat;
 }
 
 .items-2 {
@@ -876,8 +882,7 @@ a {
 
 .catalog-items{
     width:940px;
-    margin:20px auto;
-    background-color red;
+    margin:20px auto;    
 }
 
 .catalog-items .row{
@@ -1434,8 +1439,6 @@ a {
 	width: 463px;
 	margin-left: 80px;
 	margin-top: 40px;
-	background-color yellow;
-
 }
 
 .forms-central-block label {
@@ -1460,6 +1463,8 @@ a {
 
 .forms-central-block textarea {
 	padding-top: 10px;
+	width: 445px;
+	height: 120px;
 }
 
 .forms-central-block input,
@@ -2040,8 +2045,7 @@ a {
 	line-height: 20px;
 	text-transform: uppercase;	
 	width: 120px;
-	height: 185px;		
-	background-color yellow;
+	height: 185px;	
 }
 
 .forms-manufactures-text label {
@@ -2112,7 +2116,6 @@ input[type="checkbox"]:checked:hover + label::after {
 input[type="checkbox"]:checked:disabled + label::after {
 	background: url(../img/sprite-5.png);
 	background-position: -123px;
-
 }
 
 .forms-food {
@@ -2181,7 +2184,6 @@ input[type="radio"]:disabled + label {
   	color: #B4B4B4;
   	cursor: default;
 }
-
 
 input[type="radio"]:checked + label::after {
 	content: "";

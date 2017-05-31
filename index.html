@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Техномарт</title>
 </head>
 
@@ -15,7 +15,8 @@
 			<div class="central-block central-block-header-top clearfix">
 				<a class="logo-out">Техномарт</a>
 				<form class="header-top-form" action="#" method="post">					
-					<input type="text" name="text" placeholder="Поиск:">										
+					<input class="input-search" id="search-label" type="search" name="search" placeholder="Поиск:">
+					<label class="label-search" for="search-label"></label>										
 				</form>
 				<a class="header-top-bookmark">Закладки: 0</a>
 				<a class="basket">Корзина: 0</a>
@@ -64,36 +65,37 @@
 					<div class="text-1">Инструмент</div>
 					<a href="#" class="text-2">На все случаи</a>
 				</div>
-				<div class="item item-3-slider">					
-        			<input type="radio" id="btn-1" name="toggle" checked>
-        			<input type="radio" id="btn-2" name="toggle">
-        			<div class="slider-controls">        				
-          				<label for="btn-1"></label>
-          				<label for="btn-2"></label>          					
-        			</div>
 
-        			<div class="slides">
-          				<div class="slide">
-            				<div class="slide-block">
-              					<div class="slide-title">Перфораторы</div>
-              					<p class="slide-text">Настроящие мужские игрушки</p>             						
-            				</div>
-            				<div class="left"></div>
-            				<div class="right"></div>
+        		<div class="product-item slider">
+        			<input type="radio" name="slide" id="slide1" checked>
+        			<input type="radio" name="slide" id="slide2">
+        			<div class="slide slide1">
+          				<label for="slide1" class="arrow-left"></label>
+          				<label for="slide2" class="arrow-right"></label>
+          				<div class="slide-content">
+            				<h2 class="slide-title">Перфораторы</h2>
+            				<p class="slide-text">Настоящие мужские игрушки</p>
             				<a class="btn" href="#">Открыть каталог</a>
           				</div>
-
-          				<div class="slide">
-            				<div class="slide-block">
-              					<div class="slide-title">Дрели</div>              				
-              					<p class="slide-text">Соседям на радость!</p>             						
-            				</div>
-            				<div class="left"></div>
-            				<div class="right"></div>
+          				<div class="slide-controls">
+            				<label for="slide1"></label>
+            				<label for="slide2"></label>
+          				</div>
+        			</div>
+        			<div class="slide slide2">
+          				<label for="slide1" class="arrow-left"></label>
+          				<label for="slide2" class="arrow-right"></label>
+          				<div class="slide-content">
+            				<h2 class="slide-title">Дрели</h2>
+            				<p class="slide-text">Соседям на радость</p>
             				<a class="btn" href="#">Открыть каталог</a>
-          				</div>          
-          			</div>
-          		</div>
+          				</div>
+          				<div class="slide-controls">
+            				<label for="slide1"></label>
+            				<label for="slide2"></label>
+          				</div>
+        			</div>
+      			</div>          		
         	</div>        		
 
 			<div class="items-2 clearfix">
@@ -111,7 +113,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 
 	<div class="info-block-2">		
 		<div class="central-block">
@@ -250,7 +252,7 @@
 				<form class="forms-central-block clearfix" action="#" method="post">				
 					<div class="text1"><label>Ваше имя:<input type="text" name="text" placeholder="Представьтесь, пожалуйста"></label></div>
 					<div class="text2"><label>Ваш e-mail:<input type="text" name="text" placeholder="Для отправки ответа"></label></div>
-					<div class="text3"><label>Текст письма:<textarea cols="61" rows="6" placeholder="В свободной форме"></textarea></label></div>
+					<div class="text3"><label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label></div>
 				</form>
 				<div class="buttons-block">
 					<button class="send">Отправить</button>
